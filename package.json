@@ -14,5 +14,18 @@
     "hbs": "^4.2.0",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1"
-  }
+  },
+  "description": "",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myomyintkyaw2280/credit-card-payment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/myomyintkyaw2280/credit-card-payment/issues"
+  },
+  "homepage": "https://github.com/myomyintkyaw2280/credit-card-payment#readme"
 }
