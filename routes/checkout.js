@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require('express');
 const router = express.Router();
 const braintree = require('braintree');
@@ -7,9 +8,9 @@ router.post('/', (req, res, next) => {
   const gateway = new braintree.BraintreeGateway({
     environment: braintree.Environment.Sandbox,
     // Use your own credentials from the sandbox Control Panel here
-    merchantId:   '8j8hcnmss45ny5s5',
-    publicKey:    'yqzvw3n7vg7d975q',
-    privateKey:   '5aa4fc454d647378d715786d1b2ac0ac'
+    merchantId:   process.env.MERCHANT_ID,
+    publicKey:    process.env.PUBLIC_KEY,
+    privateKey:   process.env.PRIVATE_KEY
   });
 
   console.log(req);

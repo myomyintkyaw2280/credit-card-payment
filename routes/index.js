@@ -1,4 +1,6 @@
 var express = require('express');
+require("dotenv").config();
+
 var router = express.Router();
 
 /* GET home page. */
